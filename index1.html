@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPORT</title>
+<link rel="stylesheet" href="CSS/Code1.css">
+</head>
+
+<body>
+
+<select id="language">
+<option value="en">ENGLISH</option>
+<option value="fr">FRANÇAIS</option>
+</select>
+
+<!-- WELCOME -->
+<section>
+<div class="card">
+<h2 id="welcome"></h2>
+<p id="intro"></p>
+</div>
+</section>
+
+<!-- SPORTS -->
+<section>
+<div class="card">
+<h2 id="sportsTitle"></h2>
+
+<!-- FOOTBALL -->
+<div class="sport" onclick="toggle('football')">
+<span>⚽ Football (Top 5 Players)</span>
+<div class="players" id="football">
+
+<div class="player">
+<div class="avatar"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ39G4u2GhO73G2r74m-edCJFenwXIqvABWZQ&s"></div>
+<span><a href="/FOOTBALL/ronaldo.html">Cristiano Ronaldo</a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src="https://s.ndtvimg.com/images/entities/300/lionel-messi-90996.png"></div>
+<span><a href="/FOOTBALL/messi.html">Lionel Messi</a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src="https://i.pinimg.com/736x/40/a2/f4/40a2f49e703b33b5f3dba5351e68a8fb.jpg"></div>
+<span><a href="/FOOTBALL/neymar.html">Neymar Jr</a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/FOOTBALL/#"></a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/FOOTBALL/#"></a></span>
+</div>
+
+<div class="add-container">
+<div class="add-player" onclick="goToRequest(event)">+</div>
+<div class="add-text"></div>
+</div>
+
+</div>
+</div>
+
+<!-- RUGBY -->
+<div class="sport" onclick="toggle('rugby')">
+<span>🏉 Rugby (Top 5 Players)</span>
+<div class="players" id="rugby">
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/RUGBY/dupont.html">Antoine Dupont</a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/RUGBY/chabal.html">Sébastien Chabal</a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/RUGBY/#"></a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/RUGBY/#"></a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/RUGBY/#"></a></span>
+</div>
+
+<div class="add-container">
+<div class="add-player" onclick="goToRequest(event)">+</div>
+<div class="add-text"></div>
+</div>
+
+</div>
+</div>
+
+<!-- TENNIS -->
+<div class="sport" onclick="toggle('tennis')">
+<span>🎾 Tennis (Top 5 Players)</span>
+<div class="players" id="tennis">
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/TENNIS/nadal.html">Rafael Nadal</a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/TENNIS/djokovic.html">Novak Djokovic</a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/TENNIS/#"></a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/TENNIS/#"></a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/TENNIS/#"></a></span>
+</div>
+
+<div class="add-container">
+<div class="add-player" onclick="goToRequest(event)">+</div>
+<div class="add-text"></div>
+</div>
+
+</div>
+</div>
+
+<!-- BASKETBALL -->
+<div class="sport" onclick="toggle('basketball')">
+<span>🏀 Basketball (Top 5 Players)</span>
+<div class="players" id="basketball">
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/BASKETBALL/lebron.html">LeBron James</a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/BASKETBALL/curry.html">Stephen Curry</a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/BASKETBALL/#"></a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/BASKETBALL/#"></a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/BASKETBALL/#"></a></span>
+</div>
+
+<div class="add-container">
+<div class="add-player" onclick="goToRequest(event)">+</div>
+<div class="add-text"></div>
+</div>
+
+</div>
+</div>
+
+<!-- CYCLING -->
+<div class="sport" onclick="toggle('cycling')">
+<span>🚴 Cycling (Top 5 Players)</span>
+<div class="players" id="cycling">
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/CYCLING/pogacar.html">Tadej Pogačar</a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/CYCLING/froome.html">Chris Froome</a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/CYCLING/#"></a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/CYCLING/#"></a></span>
+</div>
+
+<div class="player">
+<div class="avatar"><img src=""></div>
+<span><a href="/CYCLING/#"></a></span>
+</div>
+
+<div class="add-container">
+<div class="add-player" onclick="goToRequest(event)">+</div>
+<div class="add-text"></div>
+</div>
+
+</div>
+</div>
+
+<!-- ADD SPORT -->
+<div class="add-sport" onclick="goToSport()">
+<div class="plus">+</div>
+<div id="addSportText"></div>
+</div>
+
+</div>
+</section>
+
+<script src="JS/Code1.js"></script>
+
+</body>
+</html>

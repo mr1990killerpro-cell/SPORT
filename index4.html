@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPORT</title>
+<link rel="stylesheet" href="CSS/confirmation.css">
+
+</head>
+
+<body>
+
+<!-- 🌍 LANGUAGE SELECT TOP RIGHT -->
+<select id="lang" onchange="changeLang()">
+    <option value="en">English</option>
+    <option value="fr">Français</option>
+</select>
+
+<div class="box">
+
+<!-- GREEN TICK -->
+<svg width="90" height="90" viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="10" fill="#22c55e"/>
+  <path d="M7 13l3 3 7-7" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
+
+<h2 id="title">Success!</h2>
+
+<div class="message" id="msg">
+Thank you for reaching out to us! We have received your request and we'll do our best to add your player within 3-4 days.<br><br>
+Best Regards.
+</div>
+
+</div>
+
+<script src="JS/confirmation.js"></script>
+
+</body>
+</html>

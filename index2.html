@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPORT</title>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<link rel="stylesheet" href="CSS/request.css">
+
+</head>
+
+<body>
+
+<!-- 🌍 LANGUAGE SELECT -->
+<select id="lang" onchange="changeLang()">
+    <option value="en">English</option>
+    <option value="fr">Français</option>
+</select>
+
+<div class="box">
+
+<h3 id="title">Request Player</h3>
+
+<!-- ORDER FIXED -->
+<input type="text" id="sport" placeholder="Sport Name">
+<input type="text" id="player" placeholder="Player Name (Multiple players accepted)">
+<input type="email" id="email" placeholder="Email (@gmail.com only)">
+
+<button onclick="sendCode()" id="sendBtn">Send Code</button>
+
+<div id="verifyBox">
+<input type="text" id="code" placeholder="Enter code">
+<button onclick="verifyCode()" id="confirmBtn">Confirm</button>
+</div>
+
+<p id="msg"></p>
+
+</div>
+
+<script src="JS/request.js"></script>
+
+</body>
+</html>
